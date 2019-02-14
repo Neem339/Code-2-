@@ -14,7 +14,6 @@ void draw(){
       
       float r = map(distX, 0, width, 0, 255); 
       float g = map(distY, 0, height, 0, 255); 
-      
       fill(r, g, 175); 
       rect(i, j, 10, 10); 
     }
