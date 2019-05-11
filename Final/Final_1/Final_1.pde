@@ -23,10 +23,12 @@ void setup() {
 
 void draw() {
   background(0); 
-  loadPixels(); //function built within processing, loads pixels into a 1d array 
+  loadPixels(); 
 
-//make variables here 
-  camera(mouseX, height/2, (mouseY/2)/ tan(PI/6), width/2, height/2, 0, 0, 1, 0);
+//make variables here tan(PI/6)
+
+  // camera(mouseX, height/2, keyPressed/ tan(PI/12), width/2, height/2, 0, 0, 1, 0);
+  camera(mouseX, height/2, (mouseY/2)/ tan(PI/12), width/2, height/2, 0, 0, 1, 0);
 
   for (int i= 0; i<cols; i++) {
     for (int j =0; j<rows; j++) {
@@ -53,4 +55,6 @@ void draw() {
   }
   //void keypressed
     //key code left r
+    //if(keyPressed w) 
+     // then effect camera?
 }
